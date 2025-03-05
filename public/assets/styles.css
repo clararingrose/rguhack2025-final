@@ -1,0 +1,280 @@
+@font-face {
+  font-family: proxima-nova;
+  src: url(fonts/proximanova_regular.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: proxima-nova;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #452947;
+}
+
+#llm {
+  text-align: center;
+  border: 2px solid black;
+  margin: 40px;
+  border-radius: 20px;
+  background-color: #DDD7FD;
+  padding: 10px;
+}
+
+#llm button{
+  background-color: #452947;
+  color: #DDD7FD;
+  padding:5px 10px;
+  border-radius: 5px;
+}
+
+#llm select{
+  padding:5px 10px;
+  margin-right: 5px;
+  width: 150px;
+  height:30px;
+}
+
+#llm h3{
+  padding-bottom: 10px;
+}
+
+#llm h2{
+  padding-top: 10px;
+}
+
+#llm #whoYou{
+  padding-bottom: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #452947;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #DDD7FD;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#acclogo {
+  width:95px;
+  margin-top: 1%
+}
+/* colors: dark purple: 342237, purple: 412a45 */
+
+@media only screen and (max-width: 600px) {
+  body{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #conversation, #input, #links {
+    width:100%
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #conversation, #input, #links {
+    width:75%
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin:auto;
+  }
+  #conversation, #input, #links {
+    width:60%
+  }
+}
+
+#conversation{
+/*   
+  display: block;
+  margin-left:auto;
+  margin-right: auto; */
+  height: 350px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-radius: 20px;
+  border-color: white;
+}
+#input{
+/*     
+  display: block;
+  margin-left:auto;
+  margin-right: auto; */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-radius: 20px;
+  
+}
+
+#links{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-radius: 20px;
+  display: none;
+  height:200px;
+
+}
+#Mentioned{
+  color: #DDD7FD;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer {
+  background-color: #452947;
+  color: #DDD7FD;
+  padding: 1em;
+}
+
+#boxLinks {
+  width: 400px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2px;
+  text-align: justify;
+  background: transparent;
+  }
+
+#abz, #swf, #bs, #cas, #samh, #scr{
+  display:none
+}

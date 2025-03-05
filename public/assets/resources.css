@@ -1,0 +1,25 @@
+/* Resource css */
+.resourceBox img{
+    width: 80px;
+    height: 80px;
+    float: left
+}
+
+.resourceBox h2{
+    display:inline-block;
+    padding:30px
+}
+
+.resourceBox{
+    padding:20px;
+    margin:20px;
+    border-style:solid ;
+    border-width: 5px;
+    border-radius: 5px;
+    background-color: #DDD7FD;
+    
+}
+
+.resourceBox p{
+    padding-top: 20px;
+}

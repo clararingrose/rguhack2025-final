@@ -1,0 +1,24 @@
+{
+  "name": "rguhack2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clararingrose/rguhack2025.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clararingrose/rguhack2025/issues"
+  },
+  "homepage": "https://github.com/clararingrose/rguhack2025#readme"
+}
