@@ -38,11 +38,6 @@
                         const data = await response.json();
                         console.log(data)
                         conversation.value += `AI: ${data.response}\n`;
-                        // links = document.getElementById("links")
-                        // links.style.display = 'block';
-                        // links.style.marginLeft = "auto";
-                        // links.style.marginRight = "auto";
-
 
                         document.getElementById("Mentioned").style.color = 'black';
                         
@@ -104,20 +99,9 @@
                         }
                         const data = await response.json();
 
-                        // responseFromData = data.response.replace("I'm focused on providing support for homelessness and related issues.", "")
                         conversation.value += `AI: ${data.response}\n`;
-                        // links = document.getElementById("links")
-                        
-                        // links.style.display = 'block';
-                        // links.style.textAlign = center;
-
 
                         document.getElementById("Mentioned").style.color = 'black';
-                        
-                        // links.style.marginLeft = "auto";
-                        // links.style.marginRight = "auto";
-
-                        
                         
                         if(data.response.toLowerCase().includes("breathing space")){
                             document.getElementById("bs").style.display = "block"
@@ -149,36 +133,8 @@
                         conversation.value += `Error: ${error.message}\n`;
                     }
                 }
-                let slideIndex = 1;
-                showSlides(slideIndex);
 
-                // Next/previous controls
-                function plusSlides(n) {
-                showSlides(slideIndex += n);
-                }
-
-                // Thumbnail image controls
-                function currentSlide(n) {
-                showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-                }
-
-                </script>
+            </script>
         </head>
         <body>
             <%- include('../partials/header') %> 
@@ -212,8 +168,6 @@
                 <button id="summaryButton" onclick="getSummary()">get summary</button>
 
 
-
-                <!-- <textarea id="links" readonly></textarea> -->
                 <div id="boxMentioned">
                     <h2 id="Mentioned">Mentioned websites:</h2>
                     <p id="swf"><a href=https://www.aberdeencity.gov.uk/services/benefits-and-advice/apply-scottish-welfare-fund>Scottish Welfare Fund (SWF)</a></p>
