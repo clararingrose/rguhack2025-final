@@ -1,5 +1,5 @@
 {
-  "name": "rguhack2025",
+  "name": "rguhack2025-final",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clararingrose/rguhack2025.git"
+    "url": "git+https://github.com/clararingrose/rguhack2025-final.git"
   },
   "bugs": {
-    "url": "https://github.com/clararingrose/rguhack2025/issues"
+    "url": "https://github.com/clararingrose/rguhack2025-final/issues"
   },
-  "homepage": "https://github.com/clararingrose/rguhack2025#readme"
+  "homepage": "https://github.com/clararingrose/rguhack2025-final#readme"
 }
