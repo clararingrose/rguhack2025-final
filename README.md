@@ -4,7 +4,7 @@ open the folder: `cd rguhack2025-final`<br>
 
 <h1>save your OpenAI API key as an environment variable:</h1> <br>
 <strong>Using command:</strong> `export OPENAI_API_KEY=[insert openai key here]`<br>
-OR<br>
+<strong>OR</strong><br>
 <strong>Manually for windows machine</strong>
 <ul>
   <li><strong>Open System Properties:</strong>
@@ -42,7 +42,7 @@ OR<br>
   <li>winget install Schniz.fnm</li>
   <li>fnm install 22</li>
 </ul>
-Or visit: <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a> 
+<strong>OR</strong> visit: <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a> 
 And select the windows installer.<br><br>
 
 <h1>Setup and run webapp</h1>
